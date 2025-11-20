@@ -1,278 +1,134 @@
-\# Datos del estudiante
-
-\*\*Nombre:\*\* Angel David Barrios Díaz  
-
-\*\*Matrícula:\*\* 2978194  
-
-\*\*Carrera:\*\* IDS  
-
-\*\*Semestre:\*\* (tu semestre)
+# Datos del estudiante
+**Nombre:** Angel David Barrios Díaz  
+**Matrícula:** 2978194  
+**Carrera:** IDS  
 
 
+# Datos de la materia
+**Materia:** Diseño de Aplicaciones Web  
+**Profesor:** Luis Fernando Villafaña Rejón
 
-\# Datos de la materia
-
-\*\*Materia:\*\* Diseño de Aplicaciones Web  
-
-\*\*Profesor:\*\* (nombre del profesor)
-
-
-
-\# ¿Qué es Markdown?
-
-Markdown es un lenguaje de marcado simple y fácil de usar para dar formato a texto. Permite crear títulos, listas, tablas y documentación de forma clara. GitHub lo utiliza para documentar proyectos.
-
-
+# ¿Qué es Markdown?
+Markdown es un lenguaje de marcado simple utilizado para dar formato a texto mediante símbolos especiales.  
+Permite crear documentos claros, organizados y compatibles con plataformas como GitHub.
 
 ---
 
+# Sección: Opciones de etiquetado en Markdown
 
+## 1. Encabezados
+# Título 1
+## Título 2
+### Título 3
 
-\# Sección: Opciones de etiquetado en Markdown
+## 2. Negritas
+**Texto en negritas**
 
+## 3. Cursivas
+*Texto en cursivas*
 
+## 4. Listas numeradas
+1. Primer punto
+2. Segundo punto
 
-Markdown permite dar formato fácilmente al texto usando símbolos especiales. Aquí están algunas de las opciones más usadas, con ejemplos.
+## 5. Listas con viñetas
+- Elemento 1
+- Elemento 2
 
+## 6. Citas
+> Esto es una cita
 
+## 7. Código en línea
+`console.log("Hola");`
 
-\## 1. Encabezados
+## 8. Bloques de código
+```python
+print("Hola mundo")
+```
 
+## 9. Tablas
+| Nombre | Edad |
+|--------|------|
+| Angel  | 21   |
 
+## 10. Imágenes
+Para insertar imágenes en Markdown se usa la sintaxis:
 
-&nbsp;   # Título 1
+![Texto alternativo](Tecmilenio.png)
 
-&nbsp;   ## Título 2
+Ejemplo usando el archivo Tecmilenio.png incluido en la carpeta del proyecto:
 
-&nbsp;   ### Título 3
-
-
-
-\## 2. Negritas
-
-
-
-&nbsp;   \*\*Texto en negritas\*\*
-
-
-
-\## 3. Cursivas
-
-
-
-&nbsp;   \*Texto en cursivas\*
-
-
-
-\## 4. Listas numeradas
-
-
-
-&nbsp;   1. Primer punto
-
-&nbsp;   2. Segundo punto
-
-
-
-\## 5. Listas con viñetas
-
-
-
-&nbsp;   - Elemento 1
-
-&nbsp;   - Elemento 2
-
-
-
-\## 6. Citas
-
-
-
-&nbsp;   > Esto es una cita
-
-
-
-\## 7. Código en línea
-
-
-
-&nbsp;   `console.log("Hola");`
-
-
-
-\## 8. Bloques de código
-
-
-
-&nbsp;   ```python
-
-&nbsp;   print("Hola mundo")
-
-&nbsp;   ```
-
-
-
-\## 9. Tablas
-
-
-
-&nbsp;   | Nombre | Edad |
-
-&nbsp;   |--------|------|
-
-&nbsp;   | Angel  | 21   |
-
-
-
-\## 10. Imágenes
-
-
-
-Para insertar imágenes en Markdown se usa la siguiente sintaxis:
-
-
-
-&nbsp;   !\[Texto alternativo](ruta/imagen.png)
-
-
-
-Ejemplo usando una imagen ubicada en la misma carpeta del proyecto:
-
-
-
-&nbsp;   !\[Logo Tecmilenio](Tecmilenio.png)
-
-
+![Logo Tecmilenio](Tecmilenio.png)
 
 ---
 
+# Sección: Comandos utilizados en Git
 
+## 1. Revisar el estado del repositorio
+```
+git status
+```
 
-\# Sección: Comandos utilizados en Git
-
-
-
-A continuación se listan los comandos principales usados en Git para esta actividad y como referencia futura.
-
-
-
-\## 1. Revisar el estado del repositorio
-
-
-
-&nbsp;   git status
-
-
-
-\## 2. Agregar archivos al área de preparación (Stage)
-
-
-
+## 2. Agregar archivos al Stage
 Agregar un archivo específico:
-
-
-
-&nbsp;   git add archivo.txt
-
-
-
-Agregar todos los archivos modificados:
-
-
-
-&nbsp;   git add .
-
-
-
-\## 3. Crear commits con comentarios
-
-
-
-&nbsp;   git commit -m "Mensaje del commit"
-
-
-
-\## 4. Subir los cambios al repositorio remoto
-
-
-
-Primer push (cuando se configura la rama):
-
-
-
-&nbsp;   git push -u origin main
-
-
-
-Push en commits posteriores:
-
-
-
-&nbsp;   git push
-
-
-
-\## 5. Crear, cambiar y eliminar ramas
-
-
-
-Crear una rama:
-
-
-
-&nbsp;   git branch nombre\_rama
-
-
-
-Cambiar a una rama existente:
-
-
-
-&nbsp;   git checkout nombre\_rama
-
-
-
-Crear una rama y cambiar a ella en un solo paso:
-
-
-
-&nbsp;   git checkout -b nueva\_rama
-
-
-
-Eliminar una rama:
-
-
-
-&nbsp;   git branch -d nombre\_rama
-
-
-
-\## 6. Retroceder a un commit específico
-
-
-
-Ver historial de commits:
-
-
-
-&nbsp;   git log
-
-
-
-Cambiar temporalmente a un commit anterior:
-
-
-
-&nbsp;   git checkout ID\_del\_commit
-
-
-
-Revertir un commit manteniendo la rama actual:
-
-
-
-&nbsp;   git revert ID\_del\_commit
-
-
-
+```
+git add archivo.txt
+```
+
+Agregar todos los archivos:
+```
+git add .
+```
+
+## 3. Crear commits
+```
+git commit -m "Mensaje del commit"
+```
+
+## 4. Subir cambios
+Primer push:
+```
+git push -u origin main
+```
+
+Push posteriores:
+```
+git push
+```
+
+## 5. Crear, cambiar y eliminar ramas
+Crear:
+```
+git branch nombre_rama
+```
+
+Cambiar:
+```
+git checkout nombre_rama
+```
+
+Crear y cambiar:
+```
+git checkout -b nueva_rama
+```
+
+Eliminar:
+```
+git branch -d nombre_rama
+```
+
+## 6. Retroceder a un commit específico
+Ver historial:
+```
+git log
+```
+
+Cambiar a commit anterior:
+```
+git checkout ID_del_commit
+```
+
+Revertir un commit manteniendo la rama:
+```
+git revert ID_del_commit
+```
